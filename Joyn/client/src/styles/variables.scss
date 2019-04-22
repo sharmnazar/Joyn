@@ -1,0 +1,122 @@
+@import "../Font/stylesheet.css";
+
+/*Stock Colors*/
+$black: #000100;
+$shade: #323232;
+$grey: #CDCDCD;
+$silver: #afafaf;
+$mercury: #e1e1e1; 
+$alabaster: #FAFAFA;
+$white: #FFFFFF;
+$blue: #389ADB;
+$blue2: #78E4FF;
+$lightblue: #EFF6FB;
+$navy: rgb(13, 19, 33);
+$dark: #0058A8;
+$pink: #F16DC8;
+$lightpink: #FDECF8;
+$magenta: #D607B5;
+
+
+/*Viewport Width Break Points*/
+$mobile: 320px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1440px; 
+
+//Text Styles
+h1{
+    font-size: 36px;
+    font-family: 'Righteous';
+    margin: 0;
+    @media(min-width: $tablet){
+        font-size: 40px;
+    }
+    @media(min-width: $desktop){
+        font-size: 50px;
+    }
+}
+
+h2{
+    font-size: 20px;
+    margin: 0;
+    @media(min-width: $tablet){
+        font-size: 28px;
+    }
+    @media(min-width: $desktop){
+        font-size: 40px;
+    }
+}
+
+h3{
+    font-size: 16px;
+    margin: 0;
+    @media(min-width: $tablet){
+        font-size: 24px;
+        line-height: 35px;
+    }
+    @media(min-width: $desktop){
+        font-size: 35px;
+        line-height: 60px;
+    }
+}
+
+h4{
+    font-size: 12px;
+    font-weight: 100;
+    margin: 0;
+    @media(min-width: $tablet){
+        font-size: 20px;
+        line-height: 30px;
+    }
+    @media(min-width: $desktop){
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
+
+h5{
+    color: $grey;
+    font-size: 14px;
+    margin: 0px;
+    font-weight: 500;
+    @media(min-width: $tablet){
+        font-size: 16px;
+        line-height: 30px;
+    }
+    @media(min-width: $desktop){
+        font-size: 25px;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $blue;
+
+    :hover{
+        color: $magenta;
+    }
+}
+
+button{
+    background: $blue;
+    color:$white;
+    :hover{
+        background: $magenta;
+    }
+}
+
+ul{
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+}
+
+li{
+    font-size: 14px;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+}

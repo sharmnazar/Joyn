@@ -1,0 +1,94 @@
+@import "./variables.scss";
+
+.nav{
+    background-color: $lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid $dark;
+    margin-bottom: 20px;
+}
+
+.navigate{
+    display: flex
+}
+
+.nav__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $blue;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    max-height: 100px;
+    &:hover{
+        color: $magenta;
+    }
+    &:active{
+        color: $magenta;
+    }
+}
+
+.navigate__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $blue;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0 10px;
+    max-height: 100px;
+
+    &:hover{
+        color: $magenta;
+    }
+    &:active{
+        color: $magenta;
+    }
+    
+    &--icon{
+        filter: invert(50%) sepia(79%) saturate(1560%) hue-rotate(178deg) brightness(97%) contrast(76%);
+        @media(min-width: $laptop){
+            width: 40px;
+            height: 40px;
+        }
+        &:hover{
+            filter: invert(18%) sepia(99%) saturate(6458%) hue-rotate(302deg) brightness(93%) contrast(101%);
+        }
+        &:active{
+            filter: invert(18%) sepia(99%) saturate(6458%) hue-rotate(302deg) brightness(93%) contrast(101%);
+        }
+    }
+}
+
+.navigate__pipe{
+    color: $dark;
+}
+
+.nav__logo{
+    min-width: 80px;
+    height: 80px;
+}
+
+.nav__title{
+    position: relative;
+    right: 20px
+}
+
+.remMobile{
+    display: none;
+    color: $blue;
+
+    &:hover{
+        color: $magenta
+    }
+    @media(min-width: $tablet){
+        display: unset;
+        padding-left: 10px;
+    }
+    @media(min-width: $laptop){
+        display: unset;
+    }
+
+}

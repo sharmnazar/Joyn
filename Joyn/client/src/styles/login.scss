@@ -1,0 +1,129 @@
+@import "./variables.scss";
+
+.bg--modal {
+    @media (min-width:$tablet) {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0, 0.5);
+    } 
+}
+
+.modal {
+    padding: 16px;
+    
+    @media (min-width:$tablet) {
+        z-index: 999;
+        position: absolute;
+        height: 540px;
+        width: 540px;
+        left: 50%;
+        margin-left: -270px;
+        top: 50%;
+        margin-top: -270px;
+        background-color: $white;
+        border-radius: 5px;
+    }
+
+    @media (min-width:$desktop) {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        z-index: 999;
+        position: absolute;
+        height: 624px;
+        width: 540px;
+        left: 50%;
+        margin-left: -270px;
+        top: 50%;
+        margin-top: -312px;
+        background-color: $white;
+        border-radius: 5px;
+    }
+
+    &__title{
+        margin-bottom: 0px;
+        color: $dark;
+
+    }
+
+    &__flex {
+        display: flex;
+        flex-flow: column;
+
+        &__item {
+            margin-top: 24px;
+
+            &__input {
+                box-sizing: border-box;
+                height: 48px;
+                width: 100%;
+                padding-left: 16px;
+                margin-top: 8px;
+                border: none;
+                border-radius: 5px;
+                outline-color: transparent;
+                outline-style: none;
+                font-size: 16px;
+                color: $dark;
+                background: $lightblue;
+                &:hover{
+                    background: $lightpink;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 24px;
+
+        &__Sbtn {
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+            height: 50px;
+            font-weight: 500;
+            font-size: 16px;
+            color: $alabaster;
+
+            &:hover{
+                color: $white;
+                background: $magenta;
+            }
+        }
+
+        &__Cbtn {
+            margin-top: 8px;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+            height: 50px;
+            font-weight: 500;
+            font-size: 16px;
+            color: $blue;
+            background: white;
+
+            &:hover{
+                color: $white;
+                background: $magenta;
+            }
+        }
+    }
+}
+
+#switchDiv {
+    width: 220px;
+}
+
+.modal__flex__item--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.loginForm{
+    width: 100%;
+}

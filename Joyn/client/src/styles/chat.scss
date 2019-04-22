@@ -1,0 +1,105 @@
+@import "./variables.scss";
+
+.chat__box{
+    width: 100vw;
+    margin: 0;
+
+    .chat__board {
+      font-size: 2rem;
+      color: $black;
+      border-bottom: 2px solid $white;
+      padding-bottom: 0.5rem;
+    }
+
+    .chat__messages{
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 90vw;
+    @media(min-width: $tablet){
+        width: 70vw;
+    }
+    @media(min-width: $laptop){
+        width: 60vw;
+    }
+    }
+  }
+  .chat__form{
+    
+    width: 100%;
+
+    .chatInput{
+      margin: 2rem;
+      padding: 1.5rem 1rem;
+      outline: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      background: $blue;
+      width: 70vw;
+      word-break: break-word;
+      color:$lightblue;
+
+    @media(min-width: $tablet){
+        width: 60vw;
+    }
+    @media(min-width: $laptop){
+        width: 50vw;
+    }
+
+      &::placeholder{
+          color: $magenta
+      }
+    }
+  }
+  
+  .from__me{
+    align-self: flex-end;
+    margin: 0.2rem;
+    background-color: $lightpink;
+    padding: 0.6rem 1.6rem;
+    border-radius: 20px;
+    word-break: break-word;
+
+    .message__body{
+      font-size: 16px;
+      &--content{
+        color: $black;
+      }
+    }
+
+    .message__details{
+      font-size: 10px;
+      width: fit-content;
+      margin-left: auto;
+      &--content{
+        color: $magenta;
+      }
+    }
+  }
+
+  .from__them{
+    align-self: flex-start;
+    margin: 0.2rem;
+    background-color: $lightblue;
+    padding: 0.6rem 1.6rem;
+    border-radius: 20px;
+    word-break: break-word;
+
+    .message__body{
+      font-size: 16px
+      &--content{
+        margin: 0;
+        color: $navy;
+      }
+    }
+    
+    .message__details{
+      font-size: 10px;
+      width: fit-content;
+      margin-right: auto;
+      &--content{
+        color: $dark;
+      }
+    }
+  }

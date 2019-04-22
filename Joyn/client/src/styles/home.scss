@@ -1,0 +1,29 @@
+@import "./variables.scss";
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location__button{
+    margin: 1rem;
+      padding: 1.5rem 1rem;
+      outline: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      background: $blue;
+      width: 70vw;
+
+    @media(min-width: $tablet){
+        width: 60vw;
+    }
+    @media(min-width: $laptop){
+        width: 50vw;
+    }
+      &:hover{
+        background: $magenta;
+      }
+}

@@ -1,0 +1,92 @@
+@import "./variables.scss";
+
+.new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.newEvent{
+    display: flex;
+    justify-content: center;
+    background: $lightblue;
+    margin: 1rem;
+    border: 1px solid $navy;
+    border-radius: 5px;
+    width: 100%;
+
+    @media(min-width: $laptop){
+        width: 70%;
+    }
+
+    .newEvent__link{
+        margin: 0px;
+        width: 30%;
+        text-decoration: none;
+        color: $blue;
+    }
+
+    .newEvent__image{
+
+        &__button{
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            padding: 2.5rem 0.5rem;
+            margin: 0px;
+            text-align: center;
+
+            &:hover{
+                background: $magenta;
+            }
+
+            @media(min-width: $tablet){
+                padding: 3rem 1rem;
+            }
+
+            @media(min-width: $desktop){
+                padding: 5rem 1rem;
+            }
+
+            &--weekday{
+                font-size: 25px;
+                padding-bottom: 5%;
+
+                @media(min-width: $tablet){
+                    font-size: 50px;
+                }
+                
+                @media(min-width: $desktop){
+                    padding-bottom: 1.5rem;
+                    font-size: 70px;
+                }
+            }
+
+            &--day{
+                @media(min-width: $tablet){
+                    font-size: 40px;
+                }
+                @media(min-width: $desktop){
+                    font-size: 55px;
+                }
+            }
+
+
+        }
+
+    }
+    &__text{
+        margin-left: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        color: $navy;
+    }
+    .hidden{
+        visibility: hidden;
+    }
+}
